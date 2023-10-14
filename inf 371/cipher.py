@@ -13,9 +13,9 @@ def cipher(text,table_cipher):
 
     return TEXT
 
-#test
-with open("table_cipher.json") as f:
-    table = json.load(f)
-text = "hello, you guys !"
-TEXT = cipher(text,table)
-print(TEXT)
+##test
+#with open("table_cipher.json") as f:
+#    table = json.load(f)
+#text = "hello, you guys !"
+#TEXT = cipher(text,table)
+#print(TEXT)

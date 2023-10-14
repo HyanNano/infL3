@@ -1,23 +1,23 @@
 import json
 
-#cipher with substitution
+##decipher with substitution
  
 
-decipher(TEXT,table_decipher){
+def decipher(TEXT,table_decipher):
     text = ""
-    for letter in TEXT:
-        if letter in table_cipher.keys():
-            text = text + table_decipher[letter]
+    for LETTER in TEXT:
+        if LETTER in table_decipher.keys():
+            text = text + table_decipher[LETTER]
         else:
-            text = text + letter
+            text = text + LETTER
 
     return text
 
-}
 
-#test
-with open("table_decipher.json") as f:
-    table = json.load(f)
-TEXT = "HELLO, YOU GUYS !"
-text = decipher(TEXT,table)
-print(text)
+
+##test
+#with open("table_decipher.json") as f:
+#    table = json.load(f)
+#TEXT = "ITSSG, BGW UWBL !"
+#text = decipher(TEXT,table)
+#print(text)
