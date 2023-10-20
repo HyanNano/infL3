@@ -36,7 +36,7 @@ float puissance_recursive(float x, int n){
 
 int main(){
     float x = 21;
-    int n = 100;
+    int n = 10;
 
     printf("%f puissance %d est egal a %f",x,n,puissance_iterative(x,n));
     //printf("%f puissance %d est egal a %f",x,n,puissance_recursive(x,n));
